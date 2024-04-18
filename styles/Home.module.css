@@ -1,0 +1,223 @@
+/* *{
+  margin: 0;
+  padding: 0;
+} */
+
+.main{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  min-height: 100vh;
+  /* width: 60vw; */
+  /* box-shadow: 0 0 2px 2px grey; */
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.formNavBar{
+  width: 100%;
+  height: 80px;
+}
+
+.formContainer{
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;;
+  padding: 10px;
+}
+
+.formBody{
+  width: 100%;
+}
+
+.formHeader{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.formHeader p{
+  font-size: 12px;
+}
+
+.formPart{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.partHeading{
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.formBlock{
+  box-sizing: border-box;
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 15px;
+}
+
+.label{
+  padding-right: 10px;
+  width: 35%;
+  text-align: right;
+}
+
+.input{
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 25px;
+  padding: 2px 5px;
+}
+
+.radioContainer{
+  flex-direction: column;
+}
+
+.radioInput{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  flex-wrap: wrap;
+  border: none;
+}
+
+.radioLabel{
+  padding: 0 10px 0 0;
+}
+
+.radioOption{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 0 2px;
+}
+
+.radioOption:hover{
+  background-color: rgb(188, 55, 236);
+  border-radius: 2px;
+}
+
+.radioOption label{
+  margin-left: 3px;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.radioOption input{
+  cursor: pointer;
+}
+
+.dropdown{
+  height: 30px;
+}
+
+.delAcadContainer{
+  box-sizing: border-box;
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.delAcadBtn{
+  box-sizing: border-box;
+  padding: 5px 15px;
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  border-radius: 5px;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.delAcadBtn:hover{
+  background-color: white;
+  color: red;
+}
+
+.addAcadContainer{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addAcadBtn{
+  box-sizing: border-box;
+  padding: 5px 15px;
+  background-color: green;
+  color: white;
+  border: 1px solid green;
+  border-radius: 5px;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.addAcadBtn:hover{
+  background-color: white;
+  color: green;
+}
+
+.formFooter{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.formBtn{
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  min-width: 90px;
+  background-color: rgb(83, 8, 141);
+  color: white;
+  border: 1px solid rgb(83, 8, 141);
+  box-shadow: none;
+  cursor: pointer;
+  margin-left: 2px;
+  text-align: center;
+}
+
+.formBtn:hover{
+  background-color: white;
+  color: rgb(83, 8, 141);
+}
+
+@media (max-width: 900px) {
+  .formBlock {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .formBlock {
+    display: block;
+  }
+  .label{
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  .input{
+    width: 100%;
+  }
+}
